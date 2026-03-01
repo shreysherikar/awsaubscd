@@ -40,7 +40,7 @@ export function VenueSection() {
           {/* Map */}
           <div className="lg:col-span-2 overflow-hidden rounded-2xl border border-border/50">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.1635129641454!2d77.61619157508179!3d13.277720387066534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1e1788c464173%3A0xa7251e5bce3526e5!2sAMITY%20UNIVERSITY%2C%20BENGALURU!5e0!3m2!1sen!2sin!4v1772370517317!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0435934788424!2d77.4371905!3d12.8920197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f40f0980d2d%3A0x6b779a957b665313!2sAmity%20University%20Bangalore!5e0!3m2!1sen!2sin!4v1709251200000!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
