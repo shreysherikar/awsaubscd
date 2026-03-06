@@ -69,7 +69,6 @@ const committeeLevels = [
       { name: "Rajath Sai S", role: "Member", linkedin: "https://www.linkedin.com/in/rajath-sai-s-3560a52b5", image: "/rajat_sai.png" },
       { name: "Neelambika Bargonda", role: "Member", linkedin: "https://www.linkedin.com/in/neelambika-bargonda-78542632a", image: "/neelambika.png" },
       { name: "Husaif", role: "Member", linkedin: "https://www.linkedin.com/in/mohammed-moin-0475873b2", image: "/speaker_place.png" },
-      { name: "Jhanavi Krishnan", role: "Member", linkedin: "#", image: "/speaker_place.png" },
     ],
   },
 ]
@@ -136,7 +135,7 @@ function MemberCard({
         {role}
       </p>
       <a
-        href={linkedin}
+                { name: "Jhanavi Krishnan", role: "Member", linkedin: "#", image: "/speaker_place.png" },
         target="_blank"
         rel="noopener noreferrer"
         className="mt-2 inline-flex items-center justify-center h-7 w-7 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
