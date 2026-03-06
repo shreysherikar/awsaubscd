@@ -1,29 +1,39 @@
 "use client"
 
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
-import { Brain, Sparkles, Zap } from "lucide-react"
+import { Cloud, GitBranch, Brain, Zap, Award } from "lucide-react"
 import { useRef } from "react"
 
 const tracks = [
   {
+    icon: Cloud,
+    title: "Cloud Foundations",
+    highlights: [
+      "AWS Core Services deep-dive",
+      "VPC, IAM & Security best practices",
+      "Architecting for the cloud",
+    ],
+    color: "hsl(24 100% 50%)",
+  },
+  {
+    icon: GitBranch,
+    title: "DevOps & CI/CD",
+    highlights: [
+      "CodePipeline & CodeBuild workflows",
+      "Infrastructure as Code with CDK",
+      "Container orchestration with ECS",
+    ],
+    color: "hsl(24 90% 45%)",
+  },
+  {
     icon: Brain,
     title: "AI/ML on AWS",
     highlights: [
-      "SageMaker model training & deployment",
-      "Deep learning with AWS infrastructure",
-      "ML inference pipelines at scale",
+      "SageMaker model training",
+      "Bedrock & generative AI",
+      "Real-time ML inference pipelines",
     ],
-    color: "hsl(268 68% 55%)",
-  },
-  {
-    icon: Sparkles,
-    title: "Generative AI & LLMs",
-    highlights: [
-      "Bedrock foundation models & fine-tuning",
-      "Building with Claude & LLaMA",
-      "Prompt engineering best practices",
-    ],
-    color: "hsl(278 72% 65%)",
+    color: "hsl(215 22% 36%)",
   },
   {
     icon: Zap,
@@ -33,7 +43,17 @@ const tracks = [
       "Event-driven design patterns",
       "Step Functions orchestration",
     ],
-    color: "hsl(287 74% 72%)",
+    color: "hsl(215 14% 52%)",
+  },
+  {
+    icon: Award,
+    title: "Career & Certifications",
+    highlights: [
+      "AWS certification roadmap",
+      "Resume building for cloud roles",
+      "Mock exam strategies & tips",
+    ],
+    color: "hsl(210 10% 62%)",
   },
 ]
 
@@ -53,14 +73,14 @@ export function TracksSection() {
             Choose Your Path
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Three specialized tracks in AI, Generative AI, and Serverless architecture.
+            Five curated tracks spanning the breadth of modern cloud engineering.
           </p>
         </div>
 
         {/* Horizontal scrollable cards */}
         <div
           ref={scrollRef}
-          className="mt-16 flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-3 lg:overflow-visible lg:pb-0"
+          className="mt-16 flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-5 lg:overflow-visible lg:pb-0"
           style={{ scrollbarWidth: "none" }}
         >
           {tracks.map((track, i) => (

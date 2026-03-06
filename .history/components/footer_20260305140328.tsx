@@ -17,7 +17,7 @@ export function Footer() {
         className="absolute top-0 left-0 right-0 h-px"
         style={{
           background:
-            "linear-gradient(90deg, transparent, hsl(24 100% 50%), hsl(24 88% 45%), hsl(215 16% 55%), transparent)",
+            "linear-gradient(90deg, transparent, hsl(266 70% 58%), hsl(278 72% 66%), hsl(288 70% 72%), transparent)",
         }}
         aria-hidden="true"
       />

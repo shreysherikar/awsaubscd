@@ -17,6 +17,21 @@ function CountdownUnit({ value, label }: { value: number; label: string }) {
 }
 
 export function HeroSection() {
+  const heroLogos = [
+    {
+      name: "Amity Innovation Incubator",
+      src: "/aii.png",
+    },
+    {
+      name: "AWS Cloud Club",
+      src: "/cloudClub.png",
+    },
+    {
+      name: "Amity University Bengaluru",
+      src: "/aub_blue.png",
+    },
+  ]
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -60,7 +75,7 @@ export function HeroSection() {
         className="pointer-events-none absolute left-1/2 top-1/4 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20"
         style={{
           background:
-            "radial-gradient(circle, hsl(24 100% 50% / 0.2) 0%, transparent 70%)",
+            "radial-gradient(circle, hsl(272 72% 62% / 0.4) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -68,16 +83,32 @@ export function HeroSection() {
         className="pointer-events-none absolute right-1/4 bottom-1/3 h-[400px] w-[400px] rounded-full opacity-10"
         style={{
           background:
-            "radial-gradient(circle, hsl(215 18% 45% / 0.16) 0%, transparent 70%)",
+            "radial-gradient(circle, hsl(286 70% 70% / 0.45) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
+        {/* Logos Section */}
+        <div className="mb-10 flex items-start justify-center gap-8 sm:gap-14">
+          {heroLogos.map((logo) => (
+            <div key={logo.name} className="group flex max-w-[100px] flex-col items-center gap-2 sm:max-w-[130px]">
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="h-12 w-auto object-contain opacity-90 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 sm:h-14"
+              />
+              <span className="text-[10px] font-medium leading-tight text-foreground/85 text-center sm:text-xs">
+                {logo.name}
+              </span>
+            </div>
+          ))}
+        </div>
+
         {/* Event name */}
         <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          <span className="gradient-text block">AWS</span>
-          <span className="gradient-text block">Student Community Day</span>
+          <span className="block">AWS Student</span>
+          <span className="gradient-text block">Community Day</span>
           <span className="block text-2xl font-medium text-muted-foreground sm:text-3xl lg:text-4xl mt-2">
             2026
           </span>
@@ -123,7 +154,7 @@ export function HeroSection() {
             href="https://docs.google.com/forms/d/1tHOJsmJiqKycMuYcwHIrzXSU1uvBTPT1GAb3qEKdDLY/viewform?edit_requested=true"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_24px_hsl(24_100%_50%/0.28)]"
+            className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_hsl(268_68%_55%/0.35)]"
           >
             Register Now
             <ArrowRight

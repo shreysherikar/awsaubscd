@@ -46,7 +46,11 @@ export function Navbar() {
               key={logo.name}
               src={logo.src}
               alt={logo.name}
-              className="h-12 w-auto object-contain opacity-95"
+              className={`w-auto object-contain opacity-95 ${
+                logo.name === "AWS Cloud Club" || logo.name === "Amity University Bengaluru"
+                  ? "h-16"
+                  : "h-12"
+              }`}
             />
           ))}
         </a>

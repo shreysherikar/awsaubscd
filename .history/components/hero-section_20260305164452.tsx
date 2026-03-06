@@ -77,7 +77,7 @@ export function HeroSection() {
         {/* Event name */}
         <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
           <span className="gradient-text block">AWS</span>
-          <span className="gradient-text block">Student Community Day</span>
+          <span className="block">Student Community Day</span>
           <span className="block text-2xl font-medium text-muted-foreground sm:text-3xl lg:text-4xl mt-2">
             2026
           </span>

@@ -17,6 +17,21 @@ function CountdownUnit({ value, label }: { value: number; label: string }) {
 }
 
 export function HeroSection() {
+  const heroLogos = [
+    {
+      name: "Amity Innovation Incubator",
+      src: "/aii.png",
+    },
+    {
+      name: "AWS Cloud Club",
+      src: "/cloudClub.png",
+    },
+    {
+      name: "Amity University Bengaluru",
+      src: "/aub_blue.png",
+    },
+  ]
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -74,10 +89,26 @@ export function HeroSection() {
       />
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
+        {/* Logos Section */}
+        <div className="mb-10 flex items-start justify-center gap-10 sm:gap-16">
+          {heroLogos.map((logo) => (
+            <div key={logo.name} className="group flex max-w-[130px] flex-col items-center gap-2 sm:max-w-[170px]">
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="h-16 w-auto object-contain opacity-95 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 sm:h-20"
+              />
+              <span className="text-[10px] font-medium leading-tight text-foreground/85 text-center sm:text-xs">
+                {logo.name}
+              </span>
+            </div>
+          ))}
+        </div>
+
         {/* Event name */}
         <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          <span className="gradient-text block">AWS</span>
-          <span className="gradient-text block">Student Community Day</span>
+          <span className="block">AWS Student</span>
+          <span className="gradient-text block">Community Day</span>
           <span className="block text-2xl font-medium text-muted-foreground sm:text-3xl lg:text-4xl mt-2">
             2026
           </span>

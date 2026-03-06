@@ -69,7 +69,7 @@ export function Navbar() {
             href="https://docs.google.com/forms/d/1tHOJsmJiqKycMuYcwHIrzXSU1uvBTPT1GAb3qEKdDLY/viewform?edit_requested=true"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_20px_hsl(268_68%_55%/0.28)]"
+            className="inline-flex items-center rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_20px_hsl(24_100%_50%/0.28)]"
           >
             Register Now
           </a>
@@ -93,7 +93,7 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}

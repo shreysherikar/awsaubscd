@@ -19,10 +19,10 @@ export function LogosSection() {
   return (
     <section className="relative py-20 px-6">
       <div className="mx-auto max-w-6xl">
-        <div className="flex items-start justify-center gap-12 sm:gap-18 lg:gap-24">
+        <div className="flex items-start justify-center gap-10 sm:gap-16 lg:gap-20">
           {logos.map((logo, index) => (
             <div key={index} className="group flex flex-1 flex-col items-center gap-3">
-              <div className="flex h-24 items-center justify-center sm:h-28 lg:h-32">
+              <div className="flex h-20 items-center justify-center sm:h-24 lg:h-28">
                 <img 
                   src={logo.src} 
                   alt={logo.name} 

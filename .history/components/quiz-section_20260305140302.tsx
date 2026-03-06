@@ -38,10 +38,10 @@ const questions = [
 ]
 
 const badges = [
-  { min: 0, label: "Beginner", color: "hsl(210 12% 62%)", icon: "🌱" },
-  { min: 2, label: "Intermediate", color: "hsl(215 14% 52%)", icon: "📈" },
-  { min: 4, label: "Advanced", color: "hsl(215 22% 36%)", icon: "⭐" },
-  { min: 5, label: "Expert", color: "hsl(24 100% 50%)", icon: "👑" },
+  { min: 0, label: "Beginner", color: "hsl(258 62% 58%)", icon: "🌱" },
+  { min: 2, label: "Intermediate", color: "hsl(268 66% 56%)", icon: "📈" },
+  { min: 4, label: "Advanced", color: "hsl(278 72% 63%)", icon: "⭐" },
+  { min: 5, label: "Expert", color: "hsl(288 70% 68%)", icon: "👑" },
 ]
 
 export function QuizSection() {
@@ -113,7 +113,7 @@ export function QuizSection() {
               </p>
               <button
                 onClick={() => setStarted(true)}
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_20px_hsl(24_100%_50%/0.28)]"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_20px_hsl(268_68%_55%/0.35)]"
               >
                 Start Quiz
                 <ChevronRight size={16} />
@@ -211,7 +211,7 @@ export function QuizSection() {
                 <div className="mt-6 flex justify-end">
                   <button
                     onClick={handleNext}
-                    className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_20px_hsl(24_100%_50%/0.28)]"
+                    className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_20px_hsl(268_68%_55%/0.35)]"
                   >
                     {currentQ < questions.length - 1 ? "Next" : "See Results"}
                     <ChevronRight size={14} />

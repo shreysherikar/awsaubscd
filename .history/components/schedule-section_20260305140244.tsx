@@ -91,11 +91,11 @@ const schedule = [
 const filters: SessionType[] = ["All", "Keynote", "Workshop", "Panel", "Networking"]
 
 const typeColors: Record<SessionType, string> = {
-  All: "hsl(24 100% 50%)",
-  Keynote: "hsl(24 90% 45%)",
-  Workshop: "hsl(215 22% 36%)",
-  Panel: "hsl(215 14% 52%)",
-  Networking: "hsl(210 10% 62%)",
+  All: "hsl(268 68% 55%)",
+  Keynote: "hsl(272 70% 60%)",
+  Workshop: "hsl(260 62% 58%)",
+  Panel: "hsl(282 66% 64%)",
+  Networking: "hsl(290 66% 70%)",
 }
 
 export function ScheduleSection() {
