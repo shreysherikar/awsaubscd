@@ -9,7 +9,7 @@ const speakers = [
     name: "Vijay Rajagopal",
     role: "Country Head, GTM - AWS BFSI & Fintech",
     company: "Amazon Web Services",
-    bio: "Vijay Rajagopal is a senior BFSI and fintech leader with 22+ years of experience across strategy, business development, enterprise sales, partnerships, operations, and finance. He currently serves as Country Head – GTM for AWS BFSI & Fintech, connecting technology partners with banks, insurers, NBFCs, and capital market firms. Previously, he held leadership roles at Amazon Pay, PayPal India, Zeta, Quess Corp, and Zolve, driving large-scale business growth, product launches, and market expansion. He has also served on the boards of five companies. Vijay holds an MBA from IIM Ahmedabad, an engineering degree from BITS Pilani, is a CFA charterholder, and is AWS Certified in GenAI and Agentic AI",
+    bio: "Vijay Rajagopal has strong leadership experience of ~22 years in the Banking Financial Services, Insurance (BFSI) and Fintech space. Vijay's expertise is across Strategy, Business development, Enterprise sales, Partnerships, Operations and Finance. He is currently the Country Head for GTM for AWS BFSI and Fintech where he bridges technology partners with customers across banks, insurers, NBFCs, and capital market firms. He was the head of Amazon Pay's payments business at merchants and led pan India business expansion across enterprises for UPI, Wallet, Buy Now Pay Later and Credit card products. He was the head of Strategy and Operations at PayPal India. He was the Founding Leader and National Head at Zeta, where he led its growth to reach 200+ corporates, 1000+ SMEs and 500,000+ customers. As Director of fintech strategy at Quess Corp, he launched credit products for 400,000+ contract staffers. As COO of Zolve, he launched a neo-banking venture targeting immigrants, solving the problem of credit history migration. He has also served as a Director on the Boards of 5 companies. He has an MBA from Indian Institute of Management Ahmedabad, Engg. degree as batch topper from BITS, Pilani and is a Chartered Financial Analyst from CFA Institute (Virginia, USA). He is also an AWS Certified GenAI and Agentic AI practitioner.",
     image: "/vijay.png",
     linkedin: "#",
   },
@@ -71,10 +71,15 @@ function SpeakerModal({ speaker, onClose }: { speaker: (typeof speakers)[0]; onC
           </div>
 
           <h3 id="speaker-name" className="mt-4 font-display text-xl font-bold text-foreground">
-            <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">{speaker.name}</span>
+            {speaker.name}
           </h3>
           {speaker.role && <p className="text-sm text-primary">{speaker.role}</p>}
           {speaker.company && <p className="text-sm text-muted-foreground">{speaker.company}</p>}
+
+          <div className="mt-4 rounded-xl bg-secondary/50 p-4 w-full">
+            <p className="text-xs font-medium uppercase tracking-wider text-primary">Session</p>
+            <p className="mt-1 font-display text-sm font-semibold text-foreground">{speaker.session}</p>
+          </div>
 
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{speaker.bio}</p>
 
@@ -103,7 +108,7 @@ export function SpeakersSection() {
             <button
               key={`speaker-${i}`}
               onClick={() => setSelectedSpeaker(speaker)}
-              aria-label={`Open speaker profile: ${speaker.name}`}
+              aria-label={`Open speaker profile: ${speaker.name} — ${speaker.session}`}
               className={`glass group rounded-2xl p-6 transition-all duration-500 hover:-translate-y-1 hover:glow-sm`}
               style={{ animationDelay: `${i * 80 + 120}ms` }}
             >
@@ -119,11 +124,13 @@ export function SpeakersSection() {
                     />
                   </div>
 
-                <h3 className="mt-4 font-display font-semibold text-foreground">
-                  <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">{speaker.name}</span>
-                </h3>
+                <h3 className="mt-4 font-display font-semibold text-foreground">{speaker.name}</h3>
                 {speaker.role && <p className="text-sm text-primary mt-1">{speaker.role}</p>}
                 {speaker.company && <p className="text-xs text-muted-foreground">{speaker.company}</p>}
+
+                <div className="mt-4 rounded-lg bg-secondary/50 px-3 py-2 w-full max-w-[12rem]">
+                  <p className="text-sm font-medium text-foreground">{speaker.session}</p>
+                </div>
 
                 <div className="mt-3 flex items-center gap-2 justify-center">
                   <span className="text-xs text-muted-foreground group-hover:text-primary transition-colors">View Profile</span>
