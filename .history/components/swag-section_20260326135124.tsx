@@ -27,7 +27,7 @@ export function SwagSection() {
             Tech Swags & Goodies Await
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            We are not running tracks this year. Instead, we have exclusive tech swags and goodies just for the first 450 attendees.
+            We have exclusive tech swags and goodies just for the first 450 attendees!
           </p>
         </div>
 
