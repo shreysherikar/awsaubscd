@@ -23,7 +23,7 @@ const speakers = [
   },
   {
     name: "Sonal Sarda",
-    role: "AWS Golden Jacket Holder | 12x AWS Certified",
+    role: "AWS Golden Jacket Holder | AWStronaut | 12x AWS Certified",
     company: "Amazon Web Services",
     bio: "An AWS Golden Jacket Holder, AWStronaut, and 12x certified professional with 28+ years of experience in corporate training, technical consulting, and skill development. Specialized in AWS, Unix, Red Hat Linux, IBM AIX, and niche technologies, with a strong track record of delivering transformative learning experiences and solving complex technical challenges. Conducted 1800+ successful training sessions globally for both B2B and B2C audiences using interactive, hands-on, learner-focused delivery methods. Known for tailoring training to diverse skill levels, enabling organizations and individuals to achieve measurable growth and technical excellence. Extensive AWS ecosystem experience includes delivering multiple AWS projects reviewed and approved by an Amazon technical manager, along with creating step-by-step technical documentation, detailed learning content, and impactful cloud enablement programs for a global audience.",
     image: "/sonal.png",
