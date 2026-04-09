@@ -8,33 +8,6 @@ const sponsorTiers = [
     sponsors: [{ name: "Amazon Web Services", short: "AWS" }],
     size: "large",
   },
-  {
-    tier: "Gold Sponsors",
-    sponsors: [
-      { name: "Google Cloud", short: "GC" },
-      { name: "Microsoft Azure", short: "MA" },
-    ],
-    size: "medium",
-  },
-  {
-    tier: "Silver Sponsors",
-    sponsors: [
-      { name: "DigitalOcean", short: "DO" },
-      { name: "MongoDB", short: "MDB" },
-      { name: "Postman", short: "PM" },
-    ],
-    size: "small",
-  },
-  {
-    tier: "Community Partners",
-    sponsors: [
-      { name: "Dev Community", short: "DC" },
-      { name: "Hashnode", short: "HN" },
-      { name: "MLH", short: "MLH" },
-      { name: "AWS UG", short: "AUG" },
-    ],
-    size: "small",
-  },
 ]
 
 export function SponsorsSection() {
