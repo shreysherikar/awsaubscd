@@ -60,7 +60,7 @@ export function HeroSection() {
         className="pointer-events-none absolute left-1/2 top-1/4 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20"
         style={{
           background:
-            "radial-gradient(circle, hsl(265 80% 65% / 0.4) 0%, transparent 70%)",
+            "radial-gradient(circle, hsl(24 100% 50% / 0.2) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -68,47 +68,20 @@ export function HeroSection() {
         className="pointer-events-none absolute right-1/4 bottom-1/3 h-[400px] w-[400px] rounded-full opacity-10"
         style={{
           background:
-            "radial-gradient(circle, hsl(210 70% 60% / 0.5) 0%, transparent 70%)",
+            "radial-gradient(circle, hsl(215 18% 45% / 0.16) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
-        {/* Logos Section */}
-        <div className="mb-8 flex items-center justify-center gap-8 sm:gap-16">
-          {/* AWS Student Community Day */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-lg bg-white flex items-center justify-center shadow-sm overflow-hidden p-1.5 border border-gray-200">
-              <img src="/aii.png" alt="AWS Student Community Day" className="h-full w-full object-contain" />
-            </div>
-            <span className="text-xs sm:text-sm font-medium text-foreground text-center max-w-[80px] leading-tight">AWS Student Community</span>
-          </div>
-
-          {/* AWS Cloud Club */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-lg bg-white flex items-center justify-center shadow-sm overflow-hidden p-1.5 border border-gray-200">
-              <img src="/cloudClub.png" alt="AWS Cloud Club" className="h-full w-full object-contain" />
-            </div>
-            <span className="text-xs sm:text-sm font-medium text-foreground text-center max-w-[80px] leading-tight">AWS Cloud Club</span>
-          </div>
-
-          {/* Amity University Bengaluru */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-lg bg-[#003087] flex items-center justify-center shadow-sm overflow-hidden p-1.5 border border-gray-200">
-              <img src="/aub_blue.png" alt="Amity University Bengaluru" className="h-full w-full object-contain" />
-            </div>
-            <span className="text-xs sm:text-sm font-medium text-foreground text-center max-w-[80px] leading-tight">Amity University Bengaluru</span>
-          </div>
+        {/* Event banner */}
+        <div className="mx-auto max-w-4xl">
+          <img
+            src="/aws-scd-banner.png"
+            alt="AWS Student Community Day banner"
+            className="mx-auto w-full max-w-[720px] h-auto"
+          />
         </div>
-
-        {/* Event name */}
-        <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          <span className="block">AWS Student</span>
-          <span className="gradient-text block">Community Day</span>
-          <span className="block text-2xl font-medium text-muted-foreground sm:text-3xl lg:text-4xl mt-2">
-            2026
-          </span>
-        </h1>
 
         {/* Tagline */}
         <p className="mx-auto mt-6 max-w-lg text-lg text-muted-foreground sm:text-xl">
@@ -147,8 +120,10 @@ export function HeroSection() {
         {/* CTAs */}
         <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href="#register"
-            className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_30px_hsl(265_80%_65%/0.4)]"
+            href="https://docs.google.com/forms/d/1tHOJsmJiqKycMuYcwHIrzXSU1uvBTPT1GAb3qEKdDLY/viewform?edit_requested=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[0_0_24px_hsl(24_100%_50%/0.28)]"
           >
             Register Now
             <ArrowRight
