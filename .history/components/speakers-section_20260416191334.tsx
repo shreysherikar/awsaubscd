@@ -50,7 +50,7 @@ const speakers = [
     role: "Principal Cloud Support Engineer",
     company: "Amazon Web Services",
     bio: "Mohammedfahim Pathan is a Bengaluru-based Principal Cloud Support Engineer. He has over 17 years of experience in cloud technologies, analytics, data warehouse, distributed systems and AI/ML. He is passionate to evaluate new technologies and help customers with innovative solutions.",
-    image: "/pathan.png",
+    image: "/speaker_place.png",
     linkedin: "#",
   },
 ]
