@@ -9,32 +9,48 @@ const speakers = [
     name: "Vijay Rajagopal",
     role: "Country Head, GTM - AWS BFSI & Fintech",
     company: "Amazon Web Services",
-    bio: "Vijay Rajagopal has strong leadership experience of ~22 years in the Banking Financial Services, Insurance (BFSI) and Fintech space. Vijay's expertise is across Strategy, Business development, Enterprise sales, Partnerships, Operations and Finance. He is currently the Country Head for GTM for AWS BFSI and Fintech where he bridges technology partners with customers across banks, insurers, NBFCs, and capital market firms. He was the head of Amazon Pay's payments business at merchants and led pan India business expansion across enterprises for UPI, Wallet, Buy Now Pay Later and Credit card products. He was the head of Strategy and Operations at PayPal India. He was the Founding Leader and National Head at Zeta, where he led its growth to reach 200+ corporates, 1000+ SMEs and 500,000+ customers. As Director of fintech strategy at Quess Corp, he launched credit products for 400,000+ contract staffers. As COO of Zolve, he launched a neo-banking venture targeting immigrants, solving the problem of credit history migration. He has also served as a Director on the Boards of 5 companies. He has an MBA from Indian Institute of Management Ahmedabad, Engg. degree as batch topper from BITS, Pilani and is a Chartered Financial Analyst from CFA Institute (Virginia, USA). He is also an AWS Certified GenAI and Agentic AI practitioner.",
+    bio: "Vijay Rajagopal is a senior BFSI and fintech leader with 22+ years of experience across strategy, business development, enterprise sales, partnerships, operations, and finance. He currently serves as Country Head – GTM for AWS BFSI & Fintech, connecting technology partners with banks, insurers, NBFCs, and capital market firms. Previously, he held leadership roles at Amazon Pay, PayPal India, Zeta, Quess Corp, and Zolve, driving large-scale business growth, product launches, and market expansion. He has also served on the boards of five companies. Vijay holds an MBA from IIM Ahmedabad, an engineering degree from BITS Pilani, is a CFA charterholder, and is AWS Certified in GenAI and Agentic AI",
     image: "/vijay.png",
     linkedin: "#",
   },
   {
-    name: "Coming Soon",
-    role: "",
-    company: "",
-    bio: "Details coming soon.",
-    image: "/speaker_place.png",
+    name: "Adrian De Luca",
+    role: "Director, Cloud Acceleration, Asia Pacific & Japan",
+    company: "Amazon Web Services",
+    bio: "Adrian leads a regional team of AWS Solution Architects and Engineers, driving cloud acceleration through AI, Robotics, and IoT. With 25 years of IT experience, including roles as a CTO and startup founder, he specializes in large-scale modernization and security. Beyond enterprise tech, Adrian is a Technical Advisor to Scuderia Ferrari, serving as a bridge between AWS and Formula 1. He is also a prominent host of popular technical series like This is my Architecture.",
+    image: "/adrian.png",
     linkedin: "#",
   },
   {
-    name: "Coming Soon",
-    role: "",
-    company: "",
-    bio: "Details coming soon.",
-    image: "/speaker_place.png",
+    name: "Sonal Sarda",
+    role: "AWS Golden Jacket Holder | 12x AWS Certified",
+    company: "Amazon Web Services",
+    bio: "An AWS Golden Jacket Holder and 12x certified AWStronaut, this speaker brings over 28 years of expertise in cloud enablement and technical consulting. Having delivered 1,800+ global training sessions, they specialize in AWS, Red Hat Linux, and complex infrastructure challenges. Their deep ecosystem experience includes leading Amazon-approved projects and crafting high-impact documentation. They are a master at transforming complex cloud concepts into measurable growth and technical excellence for global organizations.",
+    image: "/sonal.png",
     linkedin: "#",
   },
   {
-    name: "Coming Soon",
-    role: "",
-    company: "",
-    bio: "Details coming soon.",
-    image: "/speaker_place.png",
+    name: "Shubham Purwar",
+    role: "Analytics & AI Specialist Solutions Architect",
+    company: "Amazon Web Services",
+    bio: "Shubham Purwar is an Analytics & AI Specialist Solutions Architect at AWS with an MTech in AI & ML from BITS Pilani, empowering Startup and ISV organizations to unlock the full potential of their data through scalable, secure, and high-performance cloud solutions. He brings deep expertise across the complete AWS analytics stack- including Amazon MSK, OpenSearch, Redshift, Glue, Athena, EMR, and SageMaker and is passionate about driving analytics and AI innovation for India's fastest-growing technology companies, having presented at AWS re:Invent 2025 in Las Vegas.",
+    image: "/shubham.png",
+    linkedin: "#",
+  },
+  {
+    name: "Sridhar Bharadwaj",
+    role: "Principal GTM Specialist, Compute Services, India",
+    company: "Amazon Web Services",
+    bio: "Sridhar Bharadwaj is a cloud infrastructure architect specializing in designing and optimizing scalable, secure, and cost-efficient computing systems on AWS. With extensive experience in cloud architecture, automation, capacity management, and workload optimization, he has led initiatives that improve performance resilience and operational efficiency across enterprise environments. His work combines deep understanding of AWS technologies with a practical approach to system design, making him a strong advocate for building robust, data-driven, and well-architected cloud solutions.",
+    image: "/sridhar.png",
+    linkedin: "#",
+  },
+  {
+    name: "Mohammedfahim Pathan",
+    role: "Principal Cloud Support Engineer",
+    company: "Amazon Web Services",
+    bio: "Mohammedfahim Pathan is a Bengaluru-based Principal Cloud Support Engineer. He has over 17 years of experience in cloud technologies, analytics, data warehouse, distributed systems and AI/ML. He is passionate to evaluate new technologies and help customers with innovative solutions.",
+    image: "/pathan.png",
     linkedin: "#",
   },
 ]
@@ -71,15 +87,10 @@ function SpeakerModal({ speaker, onClose }: { speaker: (typeof speakers)[0]; onC
           </div>
 
           <h3 id="speaker-name" className="mt-4 font-display text-xl font-bold text-foreground">
-            {speaker.name}
+            <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">{speaker.name}</span>
           </h3>
           {speaker.role && <p className="text-sm text-primary">{speaker.role}</p>}
           {speaker.company && <p className="text-sm text-muted-foreground">{speaker.company}</p>}
-
-          <div className="mt-4 rounded-xl bg-secondary/50 p-4 w-full">
-            <p className="text-xs font-medium uppercase tracking-wider text-primary">Session</p>
-            <p className="mt-1 font-display text-sm font-semibold text-foreground">{speaker.session}</p>
-          </div>
 
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{speaker.bio}</p>
 

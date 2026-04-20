@@ -39,7 +39,7 @@ const speakers = [
   },
   {
     name: "Sridhar Bharadwaj",
-    role: "Cloud Infrastructure Architect",
+    role: "Principal GTM Specialist, Compute Services, India",
     company: "Amazon Web Services",
     bio: "Sridhar Bharadwaj is a cloud infrastructure architect specializing in designing and optimizing scalable, secure, and cost-efficient computing systems on AWS. With extensive experience in cloud architecture, automation, capacity management, and workload optimization, he has led initiatives that improve performance resilience and operational efficiency across enterprise environments. His work combines deep understanding of AWS technologies with a practical approach to system design, making him a strong advocate for building robust, data-driven, and well-architected cloud solutions.",
     image: "/sridhar.png",
